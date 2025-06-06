@@ -23,20 +23,45 @@ This project seeks to replace passive feedback collection with **predictive mode
 
 The dataset spans a one-month period of interactions on an e-commerce platform called **Shopzilla**. It captures a rich variety of features relevant to customer support, such as:
 
-- `Unique id`: Record identifier
-- `Channel name`: Contact channel (email, call, chat)
-- `Category` & `Sub-category`: Nature of the interaction
-- `Customer Remarks`: Open-text feedback from users
-- `Order id`, `Order date time`: Purchase details
-- `Issue reported at`, `Issue responded`: Service timestamps
-- `Survey response date`: Time of feedback
-- `Customer city`: Customer’s location
-- `Product category`, `Item price`: Purchased item details
-- `Connected handling time`: Duration of support handling
-- `Agent name`, `Supervisor`, `Manager`: Responsible personnel
-- `Tenure Bucket`: Agent experience classification
-- `Agent Shift`: Agent’s working shift
-- `CSAT Score`: Target label (0 to 4 scale)
+Unique id: Unique identifier for each record (integer).
+
+Channel name: Name of the customer service channel (object/string).
+
+Category: Category of the interaction (object/string).
+
+Sub-category: Sub-category of the interaction (object/string).
+
+Customer Remarks: Feedback provided by the customer (object/string).
+
+Order id: Identifier for the order associated with the interaction (integer).
+
+Order date time: Date and time of the order (datetime).
+
+Issue reported at: Timestamp when the issue was reported (datetime).
+
+Issue responded: Timestamp when the issue was responded to (datetime).
+
+Survey response date: Date of the customer survey response (datetime).
+
+Customer city: City of the customer (object/string).
+
+Product category: Category of the product (object/string).
+
+Item price: Price of the item (float).
+
+Connected handling time: Time taken to handle the interaction (float).
+
+Agent name: Name of the customer service agent (object/string).
+
+Supervisor: Name of the supervisor (object/string).
+
+Manager: Name of the manager (object/string).
+
+Tenure Bucket: Bucket categorizing agent tenure (object/string).
+
+Agent Shift: Shift timing of the agent (object/string).
+
+CSAT Score: Customer Satisfaction (CSAT) score (integer).
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
